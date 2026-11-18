@@ -1,0 +1,11 @@
+{
+  "name": "intraday-prices",
+  "private": true,
+  "scripts": {
+    "dev": "podman compose up --build",
+    "dev:detach": "podman compose up --build -d",
+    "stop": "podman compose down",
+    "logs": "podman compose logs -f",
+    "test": "podman compose run --rm --no-deps server npm test"
+  }
+}

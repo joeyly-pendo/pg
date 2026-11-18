@@ -1,0 +1,29 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; color: #111827; background: #f9fafb; }
+main { max-width: 960px; margin: 0 auto; padding: 24px 16px 64px; }
+h1 { margin: 0 0 16px; font-size: 22px; }
+h2 { margin: 24px 0 8px; font-size: 18px; }
+h2 small { font-weight: 400; color: #6b7280; font-size: 13px; }
+.controls { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 12px; }
+.controls label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: #4b5563; }
+.controls .push { margin-left: auto; }
+input, select, button { font: inherit; padding: 6px 10px; border: 1px solid #d1d5db; border-radius: 6px; background: #fff; }
+input[aria-invalid="true"] { border-color: #dc2626; }
+button { background: #2563eb; border-color: #2563eb; color: #fff; cursor: pointer; }
+button:disabled { opacity: 0.6; cursor: default; }
+.field-error { color: #dc2626; font-size: 13px; align-self: center; }
+.status { color: #6b7280; }
+.chart, .table-wrap { background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 12px; margin-top: 12px; }
+.table-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; margin-top: 12px; overflow: hidden; }
+.table-card .table-wrap { border: 0; border-radius: 0; margin-top: 0; max-height: 420px; overflow: auto; padding: 0; }
+.pager { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 12px; padding: 8px 12px; border-top: 1px solid #e5e7eb; font-size: 13px; color: #4b5563; }
+.pager label { display: flex; align-items: center; gap: 6px; }
+.pager .range-label { margin-right: auto; }
+.pager select, .pager button { padding: 4px 8px; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid #f3f4f6; }
+th { position: sticky; top: 0; background: #f3f4f6; }
+.num { text-align: right; font-variant-numeric: tabular-nums; }
+.toasts { position: fixed; right: 16px; bottom: 16px; display: flex; flex-direction: column; gap: 8px; }
+.toast { display: flex; align-items: center; gap: 12px; background: #991b1b; color: #fff; padding: 10px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,.2); }
+.toast button { background: transparent; border: 0; padding: 0 4px; font-size: 18px; }
